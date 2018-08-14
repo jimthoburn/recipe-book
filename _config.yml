@@ -1,0 +1,14 @@
+baseurl: "/recipe-book"
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: default
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:path/

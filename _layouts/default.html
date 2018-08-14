@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="{{ site.baseurl }}" />
+      Recipe Book
+    </a>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer>
+    <form role="search" action="https://duckduckgo.com/" method="get">
+        <input type="hidden" name="sites" value="jimthoburn.github.io/recipe-book">
+        <p>
+            <label>
+                <input type="search" name="q" />
+            </label>
+            <button type="submit">Search</button>
+        </p>
+    </form>
+  </footer>
+
+</body>
+</html>
